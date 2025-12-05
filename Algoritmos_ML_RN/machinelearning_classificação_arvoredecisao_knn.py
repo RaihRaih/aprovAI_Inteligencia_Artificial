@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1yOU3NyR7dxh3uSDaVb-QpzLGJeWo4uqP
 """
 
-#!pip install pandas scikit-learn seaborn matplotlib
+!pip install pandas scikit-learn seaborn matplotlib
 
 # 1. Importação de bibliotecas
 
@@ -43,6 +43,8 @@ df_por = carregar_dataset("/content/Portuguese.csv")
 
 # Função para seleção e preparo das colunas pertinentes
 
+from sklearn.preprocessing import LabelEncoder
+
 def preparar_df(df, nome):
     print(f"\n[PREP] - Dataset de {nome}")
 
@@ -66,8 +68,8 @@ def preparar_df(df, nome):
 
     return df
 
-df_mat_prep = preparar_df(df_mat, "Matemática")
-df_por_prep = preparar_df(df_por, "Português")
+df_mat_prep = preparar_df(df_mat, "Matematica")
+df_por_prep = preparar_df(df_por, "Portugues")
 
 # Função para imprimir métricas e gráficos
 
