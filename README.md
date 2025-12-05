@@ -240,8 +240,6 @@ Ela identifica relações não lineares entre notas, comportamento e variáveis 
 
 # *6. Resultados Obtidos*
 
----
-
 ## *6.1. Machine Learning*
 
 De forma geral, os resultados foram consistentes entre as duas bases e ambos modelos:
